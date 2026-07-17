@@ -1,0 +1,22 @@
+# Obsidian - ignore workspace/session-specific files
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspace.json.bak
+
+# Obsidian - cache and local-only data
+.obsidian/cache
+.obsidian/.DS_Store
+
+# Obsidian - plugin data that's machine/account specific (optional, uncomment if needed)
+# .obsidian/plugins/obsidian-git/data.json
+
+# OS junk files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE clutter (optional, remove if not needed)
+.vscode/
+
+# Obsidian trash (deleted notes go here if "system trash" isn't used)
+.trash/
