@@ -1,0 +1,5 @@
+Using Claude tool Sonnet 5 model, used in the generation of **AI use Documentation practices**
+> I want to make a document to get information regarding the use of AI agents in code development. I have a work colleague that teld me that he develops . HE said: REgarding the documents I do in order to work, I do the same as I didn't use AI: specs document, requirement list and design document Explain me this in a markdown and what each document contains
+
+Using Claude tool Sonnet 5 model, used in the generation of **AI Pieces of Advice**
+> I want to make a document to collect the pieces of advice that a collegue gives me regarding the use of AI agents. Lets start adding that he uses gitignore in order to keep folders and files locally during development, in order to continue working in them later, for example he collects tasks development status after the end of an iteration that he calls **analysis**
