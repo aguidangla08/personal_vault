@@ -1,0 +1,5 @@
+- I learned 2 lessons from this case:
+	- Take care with **signals** that are **only valid in certain cycles**, register them and use that registered value, or use combinatorial logic if necessary and possible.
+	- Take care with **sequential flags** if a flag is sequential it may be loosing the cycle in which it has to be used, the extra cycle added by the logic does it.
+		- In most cases, when seeing multiple sequential blocks, extra cycles are being added, as normally the flip flop outputs and not the inputs are used.
+			- It is very tedious to do this in all cases, so sometimes I will see sequential flags, and other ones combinatorial ones.

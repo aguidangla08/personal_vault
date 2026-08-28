@@ -1,0 +1,13 @@
+- When running checks (assert,cover), the unit used to indicate the duration of the check are steps
+- Each step is equal to 1 cycle of the longest clock period(when using multiple clocks)
+- So, in order to define the steps value for checking and unholded check:
+	- Define number of cycles of the property to check
+	- Transform it to steps in this multiclock system
+		- (cycles_target -1) * (by clk_target_period/clk_max_period)
+
+- When counting cycles, it is relevant to check:
+	- when input signals are ready
+	- how many unexpected (implementation related) internal cycles the module will have
+	- reset signal disabled time (1 period of the longest clock)
+	- How mach each logic block takes
+		- LOTS OF VARIABILITY

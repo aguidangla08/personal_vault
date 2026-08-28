@@ -201,6 +201,45 @@ For debugging purposes it is possible to redirect the standard output and error 
 ```
 server_<pid>.log
 ```
+## SVA
+
+### 6.6 Constraints, Assumptions and Dependencies
+
+**Assumes visibility:**
+- By default, all assumes are used for all **consistency, assertion, and property checks**.
+- In order to re-activate the legacy handling of assumes in 360 DV, you can set the check option `-no_automatic_constraints`. Legacy mode implies the following:
+	- All assumes are used for all assertions contained inside the same module.
+	- Inside a module, SVA blocks are used to create another indepedent hierarchy of dependencies, which implies that the assumes contained inside don't apply to the assertions found outside.
+
+SVA blocks format
+```Verilog
+‘define begin_(name) if (1) begin: name
+
+// Begin block
+`begin(name)
+	// assumes and assertions
+end //name
+```
+
+Nesting of SVA blocks is supported. Each SVA block creates a new namespace for assertions and
+assume statements. The implicit dependencies of a given assertion A are all the assume statements in A’s block and all the assume statements in the enclosing blocks.
+For example, the implicit dependencies of `A3` in the following code fragment are `block1/C1, block1_2/C2` and `block1_2/C4`.
+```Verilog
+begin: block1
+	C1: assume property ...
+	begin
+		C2: assume property ...
+		C3: assume property ...
+		A2: assert property ...
+	end
+	begin: block1_2
+		C2: assume property ...
+		C4: assume property ...
+		A3:
+		assert property ...
+	end // block1_2
+end // block1
+```
 
 ### Advanced Options: Prover Configuration
 

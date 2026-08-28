@@ -1,0 +1,1 @@
+- IN reset all FFs must be in reset state

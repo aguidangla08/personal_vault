@@ -6,3 +6,7 @@
 # Reference Model Creation
 - Unless the design is super simple, it may be necessary to check the documentation or even code for details, because both designs have to perfectly match
 	- When copying code, not just copy the line where you are, but take into account the context, for example, a condition driven inside of an state, requires the condition of the state, and the if else that are before the if else of the state.
+
+# Take care with database systems
+- Check how they act when updating the design, does it break?
+- This is related to possible problems in the future

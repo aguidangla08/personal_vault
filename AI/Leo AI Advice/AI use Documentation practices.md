@@ -7,6 +7,7 @@ A colleague explained that even when using AI coding agents (like Claude Code, C
 1. **Specs Document**
 2. **Requirement List**
 3. **Design Document**
+4. **Tasks Phases Document**
 
 The idea is that AI agents don't replace planning — they replace _typing_. Good upfront documentation actually becomes **more** important with AI agents, because it's the main way you control what the AI builds, and it gives the agent (and future readers) a clear source of truth instead of vague prompts.
 

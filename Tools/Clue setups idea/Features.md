@@ -1,0 +1,25 @@
+- Leo system, he created a test language, orchestator and managers
+	- Language stores the operations in order, in multiple steps
+		- Setup, tests, reporting steps
+		- Add IDs to all steps
+		- Add demos(examples) folders and tests(actual tests)
+		- Idea configuration files, to add all parameters you're gonna use, so that **nothing** is hardcoded
+			- Make it supper generic
+				- verbosity
+				- config file
+			- "You want something than runs alone"
+			- Tips:
+				- Hardcoded values to config files, outside
+				- commit more
+		- In automatization people uses something called "robot framework" for automatization, but he made this instead
+	- Orchestator transforms the operations into specific calls to managers and orders them
+	- Managers contain the wrappers of the actual methods of each component
+
+## Lessons
+- Add demos and tests
+- Don't hardcode any value, write it to configuration files
+- Commit a lot to don't lose features
+- Add IDs to steps and different element units
+- Make it generic, pass the arguments:
+	- verbosity
+	- configuration

@@ -1,0 +1,2 @@
+- Add dependencies to design repo which tool will read
+	- Tool will use those dependencies as global variables(maybe only python venv variables to not overwrite your own system) that define versions of subtools/libraries/dependencies and check if they exist/choose right versions of tools/code
