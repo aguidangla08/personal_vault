@@ -20,5 +20,3 @@ A running collection of tips and practices shared by a colleague regarding the u
 - **Reduces token usage:** since the status/analysis is already captured in these local files, the agent doesn't need to re-read other, longer source documents again to regain context — it can just reference the shorter local summary instead.
 
 ---
-
-## (Add next piece of advice below)
