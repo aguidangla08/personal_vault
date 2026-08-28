@@ -1,0 +1,2 @@
+- Must have version control
+- Can have a glossary section

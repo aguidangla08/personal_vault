@@ -1,2 +1,0 @@
-- Define element names by setting a label to the assert, assume or cover
-- Only add assumes if they have been **proved** beneficial, some times they are not even though it seems they should

@@ -1,0 +1,11 @@
+Used to store information regarding the following different layers of the design:
+- Layers are linked to the other components using upstream and downstream relations
+- Requirements
+- design components
+- code components
+- test cases
+- test plans
+	- Include
+		- description
+		- configuration and conditions
+		- test cycles (result updates)

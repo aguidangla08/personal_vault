@@ -10,3 +10,9 @@
 # Take care with database systems
 - Check how they act when updating the design, does it break?
 - This is related to possible problems in the future
+
+- Define element names by setting a label to the assert, assume or cover
+- Only add assumes if they have been **proved** beneficial, some times they are not even though it seems they should
+
+# Commands compatibility
+- Restart the session may be needed if trying to compile after having compiled or similar features, bugs may appear if re-running certain commands in the same session
