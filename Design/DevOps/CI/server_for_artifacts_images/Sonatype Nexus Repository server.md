@@ -75,13 +75,13 @@ If the image was already built/named with the full Nexus path, tagging isn't nee
 List all repositories/images in the registry:
 
 ```bash
-curl -u user:pass https://nexus.company.com/v2/_catalog
+curl -s -u user:pass https://nexus.company.com/v2/_catalog | jq
 ```
 
 List tags for a specific image:
 
 ```bash
-curl -u user:pass https://nexus.company.com/v2/docker-hosted/nvc_ubuntu/tags/list
+curl -s -u user:pass https://nexus.company.com/v2/<docker-repository-path>/tags/list
 ```
 
 ## Erasing images
@@ -99,7 +99,7 @@ docker rmi nexus.company.com/docker-hosted/nvc_ubuntu:r1.17.1-v1
 
 ```bash
 # find the componentId for a specific tag/version
-curl -u admin:pass "https://nexus.company.com/service/rest/v1/search?repository=docker-hosted&name=nvc_ubuntu&version=r1.17.1-v1"
+curl -u admin:pass "https://nexus.company.com/service/rest/v1/search?repository=<folder-docker-repository-path>&name=nvc_ubuntu&version=r1.17.1-v1"
 
 # delete just that tag
 curl -u admin:pass -X DELETE "https://nexus.company.com/service/rest/v1/components/<componentId>"
