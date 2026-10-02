@@ -1,0 +1,2 @@
+Cutting internal signals allows to define them as input and output signals, this allows to constrain the value of the signals in the design if required.
+Take care when a signal in a design is used as the input and the output of two different assertions, in that case, if cutting signals is desired to be used, 2 compilations will be required.

@@ -16,3 +16,7 @@
 
 # Commands compatibility
 - Restart the session may be needed if trying to compile after having compiled or similar features, bugs may appear if re-running certain commands in the same session
+
+# Witness computation
+- witness computation
+    - witness computation cannot be stopped, so: Make a manual selection of which assertions to run with witness
